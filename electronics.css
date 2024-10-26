@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: white;
+  color: black;
+  
+}
+/*header*/
+header{
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  background-color: rgb(36, 34, 34);
+  color: white;
+  
+}
+.header-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  height: 50px;
+  }
+.logo img{
+  width: 70px;
+  height: auto;
+  margin:5px;
+  
+}
+.header-items ul{
+  display: flex;
+  flex-direction: row;
+}
+.header-items li {
+  margin: 8px;
+ }
+ a{
+  text-decoration: none;
+  color: white;
+ }
+ ul{
+  list-style: none;
+ }
+.navigation ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+ .icons {
+  margin-right: 20px;
+ }
+
+/*MAIN*/
+.background-image1{
+  background:url(IMAGES/kishore-v-WG571C-m_QI-unsplash.webp) ;
+  height: 800px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.overlay1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 65px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.overlay1 input{
+  width: 30%;
+  height: 5%;
+  font-size: 30px;
+  background-color: white;
+  color: rgb(4, 4, 4);
+  text-shadow: 2px 2px 4px rgb(249, 243, 243);
+  margin-left: 35%;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+section{
+  margin-top: 0;
+}
+.electronics ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+.electronics li{
+  margin: 15px;
+  border: 1px solid black;
+  height: 330px;
+  width: 200px;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  background-color: rgb(110, 109, 109);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.electronics img{
+  height: 50%;
+  width: 100%;
+}
+.product-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  text-shadow: 2px 2px 4px rgb(240, 238, 238);
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.product-text input{
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.product-text p:last-child{
+  font-size: 30px
+}
+.background-image2{
+  background:url(IMAGES/sayan-majhi-Ix-sJLRfh1c-unsplash.webp);
+  height: 800px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+.overlay2{
+  background-color: rgb(0, 2, 0, 0.3);
+  color: rgb(245, 238, 238);
+  height: 100%;
+  font-size: 65px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.camera-image img{
+  width: 50vw;
+  height: 700px;
+}
+.camera-quality{
+  display: flex;
+  flex-direction: row;
+}
+.overlay3{
+  background: linear-gradient(to left, black, white);
+  width: 50vw;
+  height: 700px;
+  border: none;
+  
+}
+.overlay3 p{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 74px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+/* footer */
+.footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(22, 21, 21);
+  margin-top: 60px;
+  font-size: 20px;
+  background-color: rgb(36, 34, 34);
+  color: white;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+}
+.logo2{
+  width: 40px;
+  height: 20px;
+}
+.about-text1{
+  width: 500px;
+  text-align: justify;
+  margin: 5px 0 15px 0;
+}
+
+
+
+
+
+
+/* mobile-phone */
+@media (max-width: 480px){
+  /* header */
+  header{
+    position: absolute;
+  } 
+  .header-items {
+    font-size: 7.5px;
+    height: 40px;
+    justify-content: center;
+  }
+  .logo img {
+    width: 30px;
+    height: auto;
+  }
+  
+  .background-image1{
+    background-size: 100% 100%;
+    height: 160px;
+  }
+  .overlay1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 16px;
+  }
+  .overlay1 input {
+    font-size: 4px;
+    margin-top: 5px;
+  }
+  .electronics li{
+    margin: 4px;
+    height: 82px;
+    width: 50px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  .product-text{
+    font-weight: bold;
+    padding-top: 2px;
+    font-size: 3.5px;
+  }
+  .product-text input{
+    width: 25px;
+    height: 7.5px;
+    margin-top: 2.5px;
+    margin-bottom: 1px;
+    font-size: 3px;
+  }
+  .product-text p:last-child{
+    font-size: 7.5px
+  }
+  .background-image2{
+    height: 200px;
+  }
+  .overlay2{
+    font-size: 16px;
+  }
+  .camera-image img{
+    height: 175px;
+  }
+  .overlay3{
+    height: 175px;
+    
+  }
+  .overlay3 p{
+    font-size: 18.5px;
+    text-align: center;
+  }
+  /* footer */
+  .footer{
+    margin-top: 3px;
+    font-size: 5px;
+  }
+  .logo2{
+    width: 10px;
+    height: 5px;
+  }
+  .about-text1{
+    width: 125px;
+    margin: 1.5px 0 3px 0;
+  }
+ }
+
+
+
+
+
+ /* tablet */
+ @media (max-width: 768px){
+    
+  header{
+    position: absolute;
+  } 
+  .header-items {
+    font-size: 12px;
+    height: 80px;
+    justify-content: center;
+  }
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+  
+  .background-image1{
+    background-size: 100% 100%;
+    height: 320px;
+  }
+  .overlay1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 32px;
+  }
+  .overlay1 input {
+    font-size: 8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .electronics li{
+    margin: 8px;
+    height: 165px;
+    width: 100px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  .product-text{
+    font-weight: bold;
+    padding-top: 4px;
+    font-size: 7px;
+  }
+  .product-text input{
+    width: 50px;
+    height: 15px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 6px;
+  }
+  .product-text p:last-child{
+    font-size: 15px
+  }
+  .background-image2{
+    height: 400px;
+  }
+  .overlay2{
+    font-size: 26px;
+  }
+  .camera-image img{
+    height: 350px;
+  }
+  .overlay3{
+    height: 350px;
+    
+  }
+  .overlay3 p{
+    font-size: 37px;
+    text-align: center;
+  }
+  /* footer */
+  .footer{
+    margin-top: 6px;
+    font-size: 10px;
+  }
+  .logo2{
+    width: 20px;
+    height: 10px;
+  }
+  .about-text1{
+    width: 250px;
+    margin: 3px 0 6px 0;
+  }
+ }
